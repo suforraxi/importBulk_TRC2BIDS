@@ -1,29 +1,23 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Converting TRC (Micromed) files into Brain Imaging Data Structure (BIDS) 
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* specify the source folder where the TRC are stored (PAT_XX/*.TRC)
+* specify the output folder where to store the BIDS structure
+* specify the filename containing the patient (PAT_XX) to import (micromed_code.tsv)
+* specify the folder where the log-file of to keep track of imported files/problems (imported.tsv)                                                                                             
+
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* Matteo Demuru
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
+* Matteo Demuru 
 * Other community or team contact

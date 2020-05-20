@@ -5,7 +5,7 @@
 %  cfgBIDS.source_dir           - input folder from where to read the
 %                                 original micromed (.TRC) files 
 %                                 (i.e. /source/PATXX/EEG_YYYY.TRC)
-%  cfgBIDS.toImportList         - directory where to find the table with
+%  cfgBIDS.toImportList         - filename with the table with
 %                                 the PAT (micromed style) code to import
 %  cfgBIDS.already_imported_dir - directory where to find the table which
 %                                 keeps tracks of the imported subjects

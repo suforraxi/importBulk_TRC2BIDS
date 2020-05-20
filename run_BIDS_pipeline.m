@@ -1,62 +1,28 @@
 
-% run bids pipeline
-%cfgBIDS                      = []                                             ;
-%cfgBIDS.source_dir           = '/home/matteo/Desktop/BIDS/RESPECT/source/'    ;
-%cfgBIDS.proj_dir             = '/home/matteo/Desktop/BIDS/RESPECT/converted/' ; 
-%cfgBIDS.already_imported_dir = '/home/matteo/Desktop/BIDS/RESPECT/info/'      ; 
+% Run bids_pipeline
+% Import multiple TRC files organized with the Micromed folder structure
+% into BIDS
 
+%     Copyright (C) 2020 Matteo Demuru
+% 
+%     This program is free software: you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation, either version 3 of the License, or
+%     (at your option) any later version.
+% 
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+% 
+%     You should have received a copy of the GNU General Public License
+%     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-
-%% temporal 12/03/2019
-%  cfgBIDS                      = []                                                                 ;
-%  cfgBIDS.source_dir           = '/home/matteo/Desktop/acute_sel/'                                  ;
-%  cfgBIDS.proj_dir             = '/home/matteo/Desktop/tle/converted2/'                             ;  
-%  cfgBIDS.already_imported_dir = '/home/matteo/Desktop/tle/info/'                                   ; 
-%  cfgBIDS.toImportList         = '/home/matteo/Desktop/tle/info/tle_info.tsv'                       ;
- 
-% bids_pipeline(cfgBIDS);
-
-
-%% extra temporal 21/02/2019
-%cfgBIDS                      = []                                                                           ;
-%cfgBIDS.source_dir           = '/home/matteo/Desktop/acute_sel/'                                            ;
-%cfgBIDS.proj_dir             = '/home/matteo/Desktop/extra_temporal/converted/'                             ;  
-%cfgBIDS.already_imported_dir = '/home/matteo/Desktop/extra_temporal/info/'                                  ; 
-%cfgBIDS.toImportList         = '/home/matteo/Desktop/extra_temporal/info/resp_pat_extratemporal.tsv'        ;
-
-
-
-
-%% extra temporal import 01/08/2019
-%cfgBIDS                      = []                                                                            ;
-%cfgBIDS.source_dir           = '/home/matteo/Desktop/acute_sel/'                                             ;
-%cfgBIDS.proj_dir             = '/home/matteo/Desktop/extra_temporal_noHFOtrial/converted2/'                   ;  
-%cfgBIDS.already_imported_dir = '/home/matteo/Desktop/extra_temporal_noHFOtrial/info/'                        ; 
-%cfgBIDS.toImportList         = '/home/matteo/Desktop/extra_temporal_noHFOtrial/info/resp_pat_noHFOtrial.tsv' ;
-
-
-
-%% try import all 16/10/2019
-%cfgBIDS                      = []                                                                            ;
-%cfgBIDS.source_dir           = '/home/matteo/Desktop/acute_sel/'                                             ;
-%cfgBIDS.proj_dir             = '/home/matteo/Desktop/import_all/converted/'                   ;  
-%cfgBIDS.already_imported_dir = '/home/matteo/Desktop/import_all/info/'                        ; 
-%cfgBIDS.toImportList         = '/home/matteo/Desktop/import_all/info/micromed_code.tsv' ;
-
-
-% try import all new BIDS 16/04/2020
-% cfgBIDS                      = []                                                                            ;
-% cfgBIDS.source_dir           = '/home/matteo/Desktop/acute/'                                             ;
-% cfgBIDS.proj_dir             = '/home/matteo/Desktop/new_BIDS_import/converted/'                   ;  
-% cfgBIDS.already_imported_dir = '/home/matteo/Desktop/new_BIDS_import/info/'                        ; 
-% cfgBIDS.toImportList         = '/home/matteo/Desktop/new_BIDS_import/info/micromed_code.tsv' ;
-
-% try import all new BIDS 20/04/2020
-cfgBIDS                      = []                                                                            ;
-cfgBIDS.source_dir           = '/home/matteo/Desktop/acute/'                                             ;
-cfgBIDS.proj_dir             = '/home/matteo/Desktop/new_BIDS_import/converted_sec/'                   ;  
-cfgBIDS.already_imported_dir = '/home/matteo/Desktop/new_BIDS_import/info/'                        ; 
-cfgBIDS.toImportList         = '/home/matteo/Desktop/new_BIDS_import/info/micromed_code.tsv' ;
+cfgBIDS                      = []                               ;
+cfgBIDS.source_dir           = '/source_TRC/'                   ;% Micromed subject folder name (/PAT_XX/*.TRC)
+cfgBIDS.proj_dir             = '/output_BIDS/'                  ;% output folder name where to store data in BIDS format 
+cfgBIDS.already_imported_dir = '/imported.tsv'                  ;% log-file of successful/failed import
+cfgBIDS.toImportList         = 'micromed_code.tsv'              ;% table with the Micromed subject name to import (PAT_XX) 
 
 
 

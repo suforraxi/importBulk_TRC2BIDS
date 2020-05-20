@@ -45,12 +45,18 @@
 
 
 % try import all new BIDS 16/04/2020
+% cfgBIDS                      = []                                                                            ;
+% cfgBIDS.source_dir           = '/home/matteo/Desktop/acute/'                                             ;
+% cfgBIDS.proj_dir             = '/home/matteo/Desktop/new_BIDS_import/converted/'                   ;  
+% cfgBIDS.already_imported_dir = '/home/matteo/Desktop/new_BIDS_import/info/'                        ; 
+% cfgBIDS.toImportList         = '/home/matteo/Desktop/new_BIDS_import/info/micromed_code.tsv' ;
+
+% try import all new BIDS 20/04/2020
 cfgBIDS                      = []                                                                            ;
 cfgBIDS.source_dir           = '/home/matteo/Desktop/acute/'                                             ;
-cfgBIDS.proj_dir             = '/home/matteo/Desktop/new_BIDS_import/converted/'                   ;  
+cfgBIDS.proj_dir             = '/home/matteo/Desktop/new_BIDS_import/converted_sec/'                   ;  
 cfgBIDS.already_imported_dir = '/home/matteo/Desktop/new_BIDS_import/info/'                        ; 
 cfgBIDS.toImportList         = '/home/matteo/Desktop/new_BIDS_import/info/micromed_code.tsv' ;
-
 
 
 

@@ -20,4 +20,3 @@
 ### Who do I talk to? ###
 
 * Matteo Demuru 
-* Other community or team contact
